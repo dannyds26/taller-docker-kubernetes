@@ -1,5 +1,5 @@
 
-# Project Title
+# Ejercicio 2
 
 A brief description of what this project does and who it's for
 
@@ -11,26 +11,31 @@ A brief description of what this project does and who it's for
 
 ## Run Locally
 
-Clone the project
+Pull docker image
 
 ```bash
-  git clone https://github.com/dannyds26/taller-docker-kubernetes.git
+  docker pull nicopaez/pingapp:3.0.0
 ```
 
-Go to the project directory
+Tag the image
 
 ```bash
-  cd ejercicio01
+  docker tag nicopaez/pingapp:3.0.0 dannyds26/pingapp:3.0.0
 ```
 
-Start the server
-
-```bash
-  docker run --name ejercicio01-nginx -v ./:/usr/share/nginx/html:ro -d nginx
+Login to dockerhub
+```
+  docker login --username dannyds26
 ```
 
-Visit web page
+Push the new image
 
 ```bash
-  http://localhost:8080/
+  docker push dannyds26/pingapp:3.0.0
+```
+
+Pull the new image
+
+```bash
+  docker pull dannyds26/pingapp:3.0.0
 ```
