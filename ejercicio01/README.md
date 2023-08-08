@@ -26,7 +26,7 @@ Go to the project directory
 Start the server
 
 ```bash
-  docker run --name ejercicio01-nginx -v ./:/usr/share/nginx/html:ro -d nginx
+  docker run --rm --name ejercicio01-nginx -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx
 ```
 
 Visit web page
