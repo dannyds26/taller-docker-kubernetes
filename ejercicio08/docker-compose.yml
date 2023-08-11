@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  app:
+    image: nicopaez/password-api
+  web:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
+    ports:
+      - 8080:8080
