@@ -12,9 +12,11 @@ JobVacancy docker-compose
 ## ¿Cuántos contenedores se están ejecutando? (pueden verlo en el archivo docker-compose.yml y también ejecutando docker ps)
 Se ejecutan 2 contenedores, unos con la aplicación web y otro con la base de datos:
 
+```
 CONTAINER ID   IMAGE                            COMMAND                  CREATED         STATUS         PORTS                                       NAMES
 ca1a5e680645   nicopaez/jobvacancy-ruby:1.3.0   "/jobvacancy/start_a…"   5 minutes ago   Up 3 minutes   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   ejercicio07-web-1
 9d40ea119906   postgres:14.4-alpine             "docker-entrypoint.s…"   5 minutes ago   Up 3 minutes   5432/tcp                                    ejercicio07-db-1
+```
 
 ## ¿Cuales son las imágenes en las que están basados los mencionados contenedores?
 Las imágenes son las siguientes:
