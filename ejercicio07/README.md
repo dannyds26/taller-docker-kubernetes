@@ -30,7 +30,7 @@ version: '2' -> Versión del compose
 services: -> Lista de servicios que se van a levantar con el compose
   web: -> Nombre del servicio web
     image: nicopaez/jobvacancy-ruby:1.3.0 -> imágen a utilizar
-    links: -> Lista los servicios que deben comunicarse en la misma red. Esta campo esta deprecado en favor de usar `networks`
+    links: -> Lista los servicios que deben comunicarse en la misma red.
       - db -> el servicio al cual necesita tener un enlace en común
     ports: -> los puertos que expone el contenedor
       - "3000:3000" ': se asigna puerto 3000 del host con el puerto 3000 del contenedor
