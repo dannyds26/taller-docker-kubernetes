@@ -15,4 +15,4 @@ Especifica cuál serpa el ejecutable que usará el contenedor a la hora de levan
 
 ## ENTRYPOINT
 
-Le indica al contenedor cuáles serán los parámetros que usará el ejecutable definido en el `ENTRYPOINY`.
+Le indica al contenedor cuáles serán los parámetros que usará el ejecutable definido en el `ENTRYPOINT`.
