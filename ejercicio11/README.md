@@ -23,5 +23,5 @@ kubectl apply -f pod.yml
 
 ## Screenshots
 
-* okteto.png
-* telegram.ong
+* ![Okteto](https://github.com/dannyds26/taller-docker-kubernetes/blob/main/ejercicio11/okteto.png)
+* ![Telegram](https://github.com/dannyds26/taller-docker-kubernetes/blob/main/ejercicio11/telegram.jpeg)
