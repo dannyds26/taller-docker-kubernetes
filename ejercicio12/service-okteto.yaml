@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: password-api
+  labels:
+    app: password-api
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  selector:
+    app: password-api
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
