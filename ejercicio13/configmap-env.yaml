@@ -7,5 +7,4 @@ metadata:
 data:
   RACK_ENV: "production"
   PORT: "3000"
-  DATABASE_URL: "jdbc:postgresql://localhost:5432/postgres"
-  
+  DATABASE_URL: "jdbc:postgresql://db:5432/postgres"
